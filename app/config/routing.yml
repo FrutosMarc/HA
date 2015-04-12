@@ -1,0 +1,8 @@
+frutos_main:
+    resource: "@FrutosMainBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: "@FrutosMainBundle/Controller/"
+    type:     annotation
