@@ -5,7 +5,7 @@ imports:
 
 framework:
     #esi:             ~
-    translator:      { fallbacks: ["%locale%"] }
+    translator: { fallbacks: ["%locale%"] }
     secret:          "%secret%"
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
@@ -75,4 +75,17 @@ swiftmailer:
 fos_user:
     db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
     firewall_name: main
-    user_class: Frutos\MainBundle\Entity\User
+    user_class: Frutos\UserBundle\Entity\User
+    group:
+        group_class: Frutos\UserBundle\Entity\Group
+    registration:
+        confirmation:
+            from_email: # Use this node only if you don't want the global email address for the confirmation email
+                address:        ...
+                sender_name:    ...
+            enabled:    false # change to true for required email confirmation
+            template:   FrutosUserBundle:Registration:email.txt.twig
+        form:
+            type:               fos_user_registration
+            name:               fos_user_registration_form
+            validation_groups:  [Registration, Default]    

@@ -1,0 +1,48 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18 avr. 2015, 15:42:57
+    Author     : Marc
+*/
+
+
+html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+
+body{margin:0; background-image: url("../images/Entetegb.png"); background-repeat: repeat-x}
+
+
+
+
+/* Classe de l'entête */
+header{
+    position:relative;
+    margin-top:-80px;
+    margin-left:164px; 
+    height:25px;
+    background-color: #D4400A;
+}
+
+/* Navigation principale */
+nav{
+    position: fixed;
+    background-color: #c3c3c3;
+    margin: 0px;
+    margin-top: 51px;
+    width : 162px;
+    height :100%;
+}
+
+/* Contenu de l'application */
+#Content
+{
+    position: fixed;
+    background-image: url("../images/bgd1.png");
+    background-repeat: repeat;
+    margin-left: 165px;
+    margin-top: 26px;
+    height :100%;
+    width:100%
+}
