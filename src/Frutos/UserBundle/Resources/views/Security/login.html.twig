@@ -1,10 +1,9 @@
-{% extends "base.html.twig" %}
+{% extends "::base.html.twig" %}
 {% block link %}
     <link href="{{asset("/css/theme.css") }}" rel="stylesheet">
 {% endblock %}
 {% trans_default_domain 'FOSUserBundle' %}
 {% block body %}
-{# {{ dump(User)}}#}
     {% block fos_user_content %}
         {% if error %}
             <div>
@@ -23,6 +22,8 @@
 
                 <label class="sr-only" for="username">{{ 'security.login.username'|trans }}</label>
                 <select>
+                    
+                </select>
                     
                 <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" />
 

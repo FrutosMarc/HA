@@ -8,7 +8,7 @@
             <!-- Custom styles for this template -->
         <link href="{{ asset("bundles/frutosmain/css/signin.css")}}" rel="stylesheet" />
         <link href="{{ asset("css/bootstrap.css")}}" rel="stylesheet" />
-        <link rel="icon" type="image/x-icon" href="{{ asset('ico-1.ico') }}" />
+        <link rel="icon" type="image/x-icon" href="{{ asset('bundles/frutosmain/images/Favicon.ico') }}" />
         {% block link %}{% endblock %}
     </head>
     <body>
@@ -21,9 +21,11 @@
         {% block Nav %}
         {% endblock %}
       </nav>
-      <div id="Content">
+     <div id="Content">
         {% block body %}
-        {% endblock %}
+        {% endblock body %}
+        
+        
       </div>
         {% block javascripts %}{% endblock %}
     </body>

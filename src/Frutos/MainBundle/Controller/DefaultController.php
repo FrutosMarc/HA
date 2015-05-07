@@ -24,10 +24,10 @@ class DefaultController extends Controller
             $users = $this->getDoctrine()->getManager()->getRepository("FrutosUserBundle:User")->findAll();
             if ($users) {
                 return $this->redirectToRoute("fos_user_security_login", array("users" => $users));
-            } else {
+           } else {
                 $group = $this->getDoctrine()->getManager()->getRepository("FrutosUserBundle:Group")->findAll();
                 if ($group) {
-                     return $this->redirectToRoute("fos_user_registration_register");
+                     return $this->redirectToRoute("fos_user_registration_register",array());
                  } else {
                      return $this->redirectToRoute("fos_user_group_new");
                  }
